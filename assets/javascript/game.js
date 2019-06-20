@@ -3,15 +3,14 @@ $(document).ready( function() {
 
     var newGame = function() {
         for (var i = 1; i <= 4; i++) {
-            var randoNumero = Math.floor(Math.random() * 13);
+            var randoNumero = Math.floor((Math.random() * 12) + 1);
             var thisButton = '#gem' + i;
             $(thisButton).attr('gem-value', randoNumero);
-            $(thisButton).text(randoNumero);
         }
         targetScore = Math.floor(Math.random() * 102) + 19;
-        $('#target-score').text(targetScore);
+        $('#target-score').text('Target Score: ' + targetScore);
         currentScore = 0;
-        $('#current-score').text(currentScore);
+        $('#current-score').text('Current Score: ' + currentScore);
     };
     newGame();
 
@@ -27,5 +26,9 @@ $(document).ready( function() {
             alert('lose!');
             newGame();
         }
+    });
+
+    $('#help-button').on('click', function() {
+        alert('Each crystal is given a random value between 1 and 12 when the game begins. Click a crystal to add its value to your current score. Try to get your score to match the target score without going over!')
     });
 });

@@ -12,14 +12,19 @@
 </head>
 <body>
     <section class="container">
+        <div class="jumbotron text-center"><h1 class="display-3">Crystal Picking Game!</h1></div>
         <div class="row">
-            <div id="target-score" class="card col-lg-1">0</div>
-            <div id="current-score" class="card col-lg-1">0</div>
-            <div id="gem1" class="crystal card col-lg-1">1</div>
-            <div id="gem2" class="crystal card col-lg-1">2</div>
-            <div id="gem3" class="crystal card col-lg-1">3</div>
-            <div id="gem4" class="crystal card col-lg-1">4</div>
+            <div class="col-lg-1"></div>
+            <div class="card col-lg-1"><p id="target-score" class="font-weight-bold"></p></div>
+            <div class="card col-lg-1"><p id="current-score" class="font-weight-bold"></p></div>
+            <div id="gem1" class="crystal card col-lg-2"><button class="btn"><img src="./assets/images/crystal1.jpg" height="125" width="125" alt="crystal one"></button></div>
+            <div id="gem2" class="crystal card col-lg-2"><button class="btn"><img src="./assets/images/crystal2.jpg" height="125" width="125" alt="crystal two"></button></div>
+            <div id="gem3" class="crystal card col-lg-2"><button class="btn"><img src="./assets/images/crystal3.jpg" height="125" width="125" alt="crystal three"></button></div>
+            <div id="gem4" class="crystal card col-lg-2"><button class="btn"><img src="./assets/images/crystal4.jpg" height="125" width="125" alt="crystal four"></button></div>
+            <div class="col-lg-1"></div>
         </div>
+        <br>
+        <button class="btn btn-lg btn-secondary" id="help-button">How do I play?</button>
     </section>
 
 
