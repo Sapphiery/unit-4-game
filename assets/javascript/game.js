@@ -16,7 +16,7 @@ $(document).ready( function() {
 
     $('.crystal').on('click', function() {
         currentScore += parseInt($(this).attr('gem-value'));
-        $('#current-score').text(currentScore);
+        $('#current-score').text('Current Score: ' + currentScore);
 
         if (currentScore === targetScore) {
             alert('Win!');
